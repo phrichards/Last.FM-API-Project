@@ -1,0 +1,1 @@
+var lastFmApp={init:function(){lastFmApp.getPlays()},apikey:"51657a939714920b12e608782d9961d0",getPlays:function(){$.ajax({url:"http://ws.audioscrobbler.com/2.0/?method=user.getartisttracks&user=elevature&artist=beck&apikey=51657a939714920b12e608782d9961d0&format=json",type:"GET",dataType:"jsonp",success:function(t){console.log(t)}})}};lastFmApp.init();
