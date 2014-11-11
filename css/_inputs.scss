@@ -2,6 +2,11 @@ input {
 	border-radius: 5px;
 	box-shadow: none;
 	padding-left: 60px;
+
+	// iPhone < 5:
+	@media screen and (device-aspect-ratio: 2/3) {
+		padding-left: 10px;
+	}
 }
 
 input[type="text"] {
@@ -34,8 +39,21 @@ span.svg-user {
 		left: 51px;
 	}
 
+	@media (max-width: 414px) {
+		left: 44px;
+	}
+
+	@media (max-width: 375px) {
+		left: 40px;
+	}
+
 	@media (max-width: 320px) {
 		left: 12px;
+	}
+
+	// iPhone < 5:
+	@media screen and (device-aspect-ratio: 2/3) {
+		display: none;
 	}
 }
 
@@ -61,8 +79,21 @@ span.svg-guitarpick {
 		left: 51px;
 	}
 
+	@media (max-width: 414px) {
+		left: 44px;
+	}
+
+	@media (max-width: 375px) {
+		left: 40px;
+	}
+
 	@media (max-width: 320px) {
 		left: 12px;
+	}
+
+	// iPhone < 5:
+	@media screen and (device-aspect-ratio: 2/3) {
+		display: none;
 	}
 }
 
@@ -96,10 +127,20 @@ span.svg-guitarpick {
     	width: 50%;
     }
 
+    @media (max-width: 375px) {
+    	width: 55%;
+    }
+
     @media (max-width: 320px) {
     	margin-left: 3.5%;
     	width: 65%;
     }
+	
+	// iPhone < 5:
+	@media screen and (device-aspect-ratio: 2/3) {
+		margin-left: 3.5%;
+		width: 45%;
+	}
 }
 
 .textfield:focus { 
@@ -147,8 +188,25 @@ span.svg-guitarpick {
 		left: 52px;
 	}
 
+	@media (max-width: 414px) {
+		top: 215px;
+		left: 22px;
+	}
+
+	@media (max-width: 375px) {
+		top: 215px;
+		left: 32px;
+	}
+
 	@media (max-width: 320px) {
-		left: -10px;
+		left: 60px;
+		top: 220px;
+	}
+
+	// iPhone < 5:
+	@media screen and (device-aspect-ratio: 2/3) {
+		top: 110px;
+		left: 70px;
 	}
 }
 
@@ -156,6 +214,11 @@ span.svg-guitarpick {
 	text-align: center;
 	color: $last-fm-red;
 	text-transform: uppercase;
+
+	@media (max-width: 320px) {
+		margin-top: 0;
+		margin-right: 20%;
+	}
 }
 
 .svg-rock svg {
@@ -166,6 +229,16 @@ span.svg-guitarpick {
 	@media (max-width: 480px) {
 		height: 300px;
 		width: 300px;
+	}
+
+	@media (max-width: 375px) {
+		height: 250px;
+		width: 250px;
+	}
+
+	@media (max-width: 320px) {
+		height: 150px;
+		width: 150px;
 	}
 }
 
@@ -197,8 +270,21 @@ span.svg-guitarpick {
 		top: 90px;
 	}
 
+	@media (max-width: 414px) {
+		left: 300px;
+	}
+
+	@media (max-width: 375px) {
+		left: 285px;
+	}
+
 	@media (max-width: 320px) {
 		left: 237px;
+	}
+
+	// iPhone < 5:
+	@media screen and (device-aspect-ratio: 2/3) {
+		top: -75px;
 	}
 }
 
