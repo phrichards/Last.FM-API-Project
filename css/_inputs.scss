@@ -140,6 +140,8 @@ span.svg-guitarpick {
 	@media screen and (device-aspect-ratio: 2/3) {
 		margin-left: 3.5%;
 		width: 45%;
+		margin-top: 15px;
+		margin-bottom: 10px;
 	}
 }
 
@@ -163,51 +165,53 @@ span.svg-guitarpick {
 }
 
 .submit {
-	position: absolute;
-	top: 175px;
-	left: 240px;
+	// position: absolute;
+	// top: 175px;
+	// left: 240px;
+	text-align: center;
+	margin-top: 150px;
 
-	@media (min-width: 1735px) {
-		top: 255px;
-	}
+	// @media (min-width: 1735px) {
+	// 	top: 255px;
+	// }
 
-	@media (max-width: 1024px) {
-		left: 230px;
-	}
+	// @media (max-width: 1024px) {
+	// 	left: 230px;
+	// }
 
-	@media (max-width: 768px) {
-		left: 142px;
-	}
+	// @media (max-width: 768px) {
+	// 	left: 142px;
+	// }
 
-	@media (max-width: 640px) {
-		left: 82px;
-	}
+	// @media (max-width: 640px) {
+	// 	left: 82px;
+	// }
 
-	@media (max-width: 480px) {
-		top: 255px;
-		left: 52px;
-	}
+	// @media (max-width: 480px) {
+	// 	top: 255px;
+	// 	left: 52px;
+	// }
 
-	@media (max-width: 414px) {
-		top: 215px;
-		left: 22px;
-	}
+	// @media (max-width: 414px) {
+	// 	top: 215px;
+	// 	left: 22px;
+	// }
 
-	@media (max-width: 375px) {
-		top: 195px;
-		left: 32px;
-	}
+	// @media (max-width: 375px) {
+	// 	top: 195px;
+	// 	left: 32px;
+	// }
 
-	@media (max-width: 320px) {
-		left: 60px;
-		top: 220px;
-	}
+	// @media (max-width: 320px) {
+	// 	left: 60px;
+	// 	top: 220px;
+	// }
 
 	// iPhone < 5:
-	@media screen and (device-aspect-ratio: 2/3) {
-		top: 110px;
-		left: 70px;
-	}
+	// @media screen and (device-aspect-ratio: 2/3) {
+	// 	top: 110px;
+	// 	left: 70px;
+	// }
 }
 
 .submit h3 {
@@ -249,6 +253,11 @@ span.svg-guitarpick {
 	fill: $last-fm-red;
 	cursor: pointer;
 	margin-left: 3%;
+
+	// iPhone < 5:
+	@media screen and (device-aspect-ratio: 2/3) {
+		display: none;
+	}
 }
 
 .small-submit {
@@ -285,7 +294,7 @@ span.svg-guitarpick {
 
 	// iPhone < 5:
 	@media screen and (device-aspect-ratio: 2/3) {
-		top: -75px;
+		top: -22px;
 	}
 }
 

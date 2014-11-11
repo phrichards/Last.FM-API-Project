@@ -174,9 +174,9 @@ body {
   position: relative;
 }
 
-body.loading {
+/*body.loading {
   overflow: hidden;
-}
+}*/
 
 body.loading .spinner {
   display: block;

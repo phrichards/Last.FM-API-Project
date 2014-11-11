@@ -3,11 +3,12 @@
 $last-fm-red: #E52B50;
 
 body {
-	position: relative;
+	// position: relative;
 	// background: url('https://farm8.staticflickr.com/7021/13992864854_976a321115_h.jpg') no-repeat center center fixed;
 	background: #333333;
 	background-size: cover;
 	color: #FFF;
+    height: 100%
 }
 
 body:before {
@@ -29,4 +30,5 @@ body:before {
     font-family: 'Source Sans Pro', sans-serif;
     position: relative;
     letter-spacing: 0.1em;
+    height: 100%
 }

@@ -105,13 +105,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 
 .clearfix:after { content: " "; visibility: hidden; display: block; height: 0; clear: both; }
 
 /* line 5, _base.scss */
-body { position: relative; background: #333333; background-size: cover; color: #FFF; }
+body { background: #333333; background-size: cover; color: #FFF; height: 100%; }
 
-/* line 13, _base.scss */
+/* line 14, _base.scss */
 body:before { content: ""; display: block; position: fixed; width: 100%; height: 100%; left: 0; top: 0; z-index: -1; background: rgba(0, 0, 0, 0.75); }
 
-/* line 25, _base.scss */
-.container { width: 100%; max-width: 940px; margin: 0 auto; font-family: 'Source Sans Pro', sans-serif; position: relative; letter-spacing: 0.1em; }
+/* line 26, _base.scss */
+.container { width: 100%; max-width: 940px; margin: 0 auto; font-family: 'Source Sans Pro', sans-serif; position: relative; letter-spacing: 0.1em; height: 100%; }
 
 /* line 1, _header.scss */
 header { width: 100%; color: #E52B50; font-family: 'Oxygen', sans-serif; height: 80px; font-size: 20px; }
@@ -241,76 +241,60 @@ span.svg-guitarpick { position: absolute; top: 1px; left: 536px; border: 1px sol
 @media (max-width: 320px) { /* line 119, _inputs.scss */
   .textfield { margin-left: 3.5%; width: 65%; } }
 @media screen and (device-aspect-ratio: 2 / 3) { /* line 119, _inputs.scss */
-  .textfield { margin-left: 3.5%; width: 45%; } }
+  .textfield { margin-left: 3.5%; width: 45%; margin-top: 15px; margin-bottom: 10px; } }
 
-/* line 146, _inputs.scss */
+/* line 148, _inputs.scss */
 .textfield:focus { outline: none; border-color: #E52B50; box-shadow: 0 0 10px #E52B50; background-color: #CCC; }
 
-/* line 153, _inputs.scss */
+/* line 155, _inputs.scss */
 .svg-rock { stroke: #E52B50; fill: #E52B50; cursor: pointer; }
 
-/* line 159, _inputs.scss */
+/* line 161, _inputs.scss */
 .svg-rock:focus { outline: none; stroke: #FFF; fill: #FFF; }
 
-/* line 165, _inputs.scss */
-.submit { position: absolute; top: 175px; left: 240px; }
-@media (min-width: 1735px) { /* line 165, _inputs.scss */
-  .submit { top: 255px; } }
-@media (max-width: 1024px) { /* line 165, _inputs.scss */
-  .submit { left: 230px; } }
-@media (max-width: 768px) { /* line 165, _inputs.scss */
-  .submit { left: 142px; } }
-@media (max-width: 640px) { /* line 165, _inputs.scss */
-  .submit { left: 82px; } }
-@media (max-width: 480px) { /* line 165, _inputs.scss */
-  .submit { top: 255px; left: 52px; } }
-@media (max-width: 414px) { /* line 165, _inputs.scss */
-  .submit { top: 215px; left: 22px; } }
-@media (max-width: 375px) { /* line 165, _inputs.scss */
-  .submit { top: 195px; left: 32px; } }
-@media (max-width: 320px) { /* line 165, _inputs.scss */
-  .submit { left: 60px; top: 220px; } }
-@media screen and (device-aspect-ratio: 2 / 3) { /* line 165, _inputs.scss */
-  .submit { top: 110px; left: 70px; } }
+/* line 167, _inputs.scss */
+.submit { text-align: center; margin-top: 150px; }
 
-/* line 213, _inputs.scss */
+/* line 217, _inputs.scss */
 .submit h3 { text-align: center; color: #E52B50; text-transform: uppercase; }
-@media (max-width: 320px) { /* line 213, _inputs.scss */
+@media (max-width: 320px) { /* line 217, _inputs.scss */
   .submit h3 { margin-top: 0; margin-right: 20%; } }
 
-/* line 224, _inputs.scss */
+/* line 228, _inputs.scss */
 .svg-rock svg { height: 400px; width: 400px; margin-right: 65px; }
-@media (max-width: 480px) { /* line 224, _inputs.scss */
+@media (max-width: 480px) { /* line 228, _inputs.scss */
   .svg-rock svg { height: 300px; width: 300px; } }
-@media (max-width: 375px) { /* line 224, _inputs.scss */
+@media (max-width: 375px) { /* line 228, _inputs.scss */
   .svg-rock svg { height: 250px; width: 250px; } }
-@media (max-width: 320px) { /* line 224, _inputs.scss */
+@media (max-width: 320px) { /* line 228, _inputs.scss */
   .svg-rock svg { height: 150px; width: 150px; } }
 
-/* line 245, _inputs.scss */
+/* line 249, _inputs.scss */
 .svg-roll svg { height: 50px; width: 50px; stroke: #E52B50; fill: #E52B50; cursor: pointer; margin-left: 3%; }
+@media screen and (device-aspect-ratio: 2 / 3) { /* line 249, _inputs.scss */
+  .svg-roll svg { display: none; } }
 
-/* line 254, _inputs.scss */
+/* line 263, _inputs.scss */
 .small-submit { position: absolute; top: 70px; left: 443px; display: none; }
-@media (max-width: 768px) { /* line 254, _inputs.scss */
+@media (max-width: 768px) { /* line 263, _inputs.scss */
   .small-submit { left: 357px; } }
-@media (max-width: 640px) { /* line 254, _inputs.scss */
+@media (max-width: 640px) { /* line 263, _inputs.scss */
   .small-submit { left: 295px; } }
-@media (max-width: 480px) { /* line 254, _inputs.scss */
+@media (max-width: 480px) { /* line 263, _inputs.scss */
   .small-submit { left: 345px; top: 90px; } }
-@media (max-width: 414px) { /* line 254, _inputs.scss */
+@media (max-width: 414px) { /* line 263, _inputs.scss */
   .small-submit { left: 300px; } }
-@media (max-width: 375px) { /* line 254, _inputs.scss */
+@media (max-width: 375px) { /* line 263, _inputs.scss */
   .small-submit { left: 285px; top: 70px; } }
-@media (max-width: 320px) { /* line 254, _inputs.scss */
+@media (max-width: 320px) { /* line 263, _inputs.scss */
   .small-submit { left: 237px; } }
-@media screen and (device-aspect-ratio: 2 / 3) { /* line 254, _inputs.scss */
-  .small-submit { top: -75px; } }
+@media screen and (device-aspect-ratio: 2 / 3) { /* line 263, _inputs.scss */
+  .small-submit { top: -22px; } }
 
-/* line 292, _inputs.scss */
+/* line 301, _inputs.scss */
 .small-submit p { color: #E52B50; margin-top: 0; }
 
-/* line 298, _inputs.scss */
+/* line 307, _inputs.scss */
 .svg-rock svg:hover, .svg-roll svg:hover { stroke: #FFF; fill: #FFF; }
 
 /* line 1, _chart.scss */
