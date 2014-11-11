@@ -14,6 +14,10 @@ header {
 		font-size: 13px;
 	}
 
+	@media (max-width: 375px) {
+		height: 50px;
+	}
+
 	// iPhone < 5:
 	@media screen and (device-aspect-ratio: 2/3) {
 		text-align: left;
@@ -46,9 +50,11 @@ h2 {
 		margin-bottom: 30px;
 	}
 
-	@media (max-width: 414px) {
+	@media (max-width: 375px) {
 		padding-right: 20px;
 		padding-left: 20px;
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 
 	// iPhone < 5:
@@ -74,6 +80,10 @@ h2 {
 
 	@media (max-width: 768px) {
 		right: 20px;
+	}
+
+	@media (max-width: 375px) {
+		top: -50px;
 	}
 
 	@media (max-width: 320px) {
@@ -116,7 +126,7 @@ h2 {
 	height: 40px;
 	width: 40px;
 
-	@media (max-width: 320px) {
+	@media (max-width: 375px) {
 		height: 30px;
 		width: 30px;
 	}

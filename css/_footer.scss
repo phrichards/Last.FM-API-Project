@@ -7,6 +7,10 @@ footer {
 	width: 100%;
 	// background-color: $last-fm-red;
 	color: $last-fm-red;
+
+	@media (max-width: 375px) {
+		display: none;
+	}
 }
 
 footer p {
