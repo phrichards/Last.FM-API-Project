@@ -5,7 +5,6 @@ footer {
 	bottom: 0;
 	padding-right: 2%;
 	width: 100%;
-	// background-color: $last-fm-red;
 	color: $last-fm-red;
 
 	@media (max-width: 375px) {
@@ -34,3 +33,7 @@ footer svg {
 footer svg:hover {
 	fill: #FFF;
 }
+
+// footer img {
+// 	float: right;
+// }

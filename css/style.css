@@ -362,7 +362,7 @@ span.svg-guitarpick { position: absolute; top: 1px; left: 536px; border: 1px sol
   .year-link { padding-left: 15px; } }
 
 /* line 103, _chart.scss */
-.year-links a:hover { color: #E52B50; }
+a.year-link:hover { color: #E52B50; }
 
 @media (max-width: 320px) { /* line 107, _chart.scss */
   .ct-chart .year-links .year-link-bottom { position: relative; bottom: -20px; } }
@@ -371,16 +371,18 @@ span.svg-guitarpick { position: absolute; top: 1px; left: 536px; border: 1px sol
 
 /* line 1, _footer.scss */
 footer { font-size: 12px; position: fixed; left: 0; bottom: 0; padding-right: 2%; width: 100%; color: #E52B50; }
+@media (max-width: 375px) { /* line 1, _footer.scss */
+  footer { display: none; } }
 
-/* line 12, _footer.scss */
+/* line 15, _footer.scss */
 footer p { float: right; margin-top: 20px; }
-@media (max-width: 480px) { /* line 12, _footer.scss */
+@media (max-width: 480px) { /* line 15, _footer.scss */
   footer p { float: left; } }
 
-/* line 21, _footer.scss */
+/* line 24, _footer.scss */
 footer svg { margin-left: 1%; float: right; width: 20px; height: 20px; margin-top: 15px; fill: #E52B50; }
 
-/* line 30, _footer.scss */
+/* line 33, _footer.scss */
 footer svg:hover { fill: #FFF; }
 
 /*# sourceMappingURL=style.css.map */

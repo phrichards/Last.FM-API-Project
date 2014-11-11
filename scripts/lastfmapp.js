@@ -48,8 +48,8 @@ lastFmApp.init = function(){
 
 	$('.svg-rock, .svg-roll').on('click', function(){
 		$(this).loaders({spinnerNumber: 3, backgroundColor: '#E52B50'});
-		$('.submit').css('display', 'none');
-		$('.small-submit').css('display', 'block');
+		// $('.submit').css('display', 'none');
+		// $('.small-submit').css('display', 'block');
 		lastFmApp.reset();
 		lastFmApp.user = $('#userName').val();
 		lastFmApp.artist = $('#artistName').val();
@@ -62,8 +62,8 @@ lastFmApp.init = function(){
 	$('.textfield, .svg-rock').on('keydown', function(){
 		if (event.keyCode == 13) {
 			$(this).loaders({spinnerNumber: 3, backgroundColor: '#E52B50'});
-			$('.submit').css('display', 'none');
-			$('.small-submit').css('display', 'block');
+			// $('.submit').css('display', 'none');
+			// $('.small-submit').css('display', 'block');
 			lastFmApp.reset();
 			lastFmApp.user = $('#userName').val();
 			lastFmApp.artist = $('#artistName').val();
@@ -120,12 +120,14 @@ lastFmApp.getTracks = function(artist, user, startDate, endDate){
 			}
 			else if (typeof (result.artisttracks['@attr']) === 'undefined') {
 					swal({
-						title: 'No results for that year!',
-						text: 'Try choosing another date.',
+						title: 'No results!',
+						text: 'Try choosing another date or entering a different artist.',
 						type: 'error'
 					});
 				}
 			else {
+				$('.submit').css('display', 'none');
+				$('.small-submit').css('display', 'block');
 				lastFmApp.totalTracks = result.artisttracks['@attr'].total;
 				lastFmApp.totalPages = result.artisttracks['@attr'].totalPages;
 				for (var i = 0; i < result.artisttracks.track.length; i++) {
@@ -264,7 +266,11 @@ lastFmApp.changeYear = function(year) {
 
 lastFmApp.question = function() {
 	$('.svg-question').on('click', function(){
-		$('.instructions p').fadeToggle(500);
+		swal({
+			title: 'Hi There!',
+			text: "This app uses data from your Last.fm account. Last.fm is great and if you don't have an account you should sign up,  but if you want to see how this app works, test it out with my account. Username is elevature. For artists, try Spoon, The National, or Arcade Fire.",
+			imageUrl: "img/speakers.png"
+		});
 	});
 };
 
