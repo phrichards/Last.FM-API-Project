@@ -1,0 +1,32 @@
+footer {
+	font-size: 12px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	padding-right: 2%;
+	width: 100%;
+	// background-color: $last-fm-red;
+	color: $last-fm-red;
+}
+
+footer p {
+	float: right;
+	margin-top: 20px;
+
+	@media (max-width: 480px) {
+		float: left;
+	}
+}
+
+footer svg {
+	margin-left: 1%;
+	float: right;
+	width: 20px;
+	height: 20px;
+	margin-top: 15px;
+	fill: $last-fm-red;
+}
+
+footer svg:hover {
+	fill: #FFF;
+}

@@ -3,8 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="../dropbox/hackeryou/week6/week6projectphil/style.css"> -->
 	<link rel="stylesheet" href="bower_components/chartist/libdist/chartist.min.css">
 	<link rel="stylesheet" href="bower_components/sweetalert/lib/sweet-alert.css">
+	<link rel="stylesheet" href="ajaxLoaders/css/loaders.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 
 	<script>
@@ -18,21 +20,35 @@
 
 	</script>
 	
-	<title>Last.FM App</title>
+	<title>Listening Trends</title>
 </head>
-<body>
+<body class="loading">
 	<header>
-		<h1>Track your Listening History with Last.FM</h1>
+		<h1>Listening Trends</h1>
 	</header>
 
 	<div class="container clearfix">
-		<h2>Enter your username and an artist, and see how frequently you listen to that artist per month.</h2>
-		<label for="userName">Username:</label>
-		<input type="text" name="userName" id="userName" class="textfield">
-		<label for="artistName">Artist Name:</label>
-		<input type="text" name="artistName" id="artistName" class="textfield">
-		<input type="button" value="Submit" id="submit">
-
+		<h2>How often do you listen to an artist in a month?</h2>
+		<div class="instructions">
+			<span class="svg-question"></span>
+			<p>This app uses data from your Last.fm account. Last.fm is great and if you don't have an account you should <a href="https://secure.last.fm/join">sign up</a>,  but if you want to see how this app works, test it out with my account. Username is elevature. For artists, try Spoon, The National, or Arcade Fire.</p>
+		</div>
+		<div class="userBox">
+			<span class="svg-user"></span>
+			<input type="text" name="userName" id="userName" class="textfield" placeholder="Last.fm Username">
+		</div>
+		<div class="small-submit">
+			<span class="svg-roll"></span>
+			<p>Submit</p>
+		</div>
+		<div class="artistBox">
+			<span class="svg-guitarpick"></span>
+			<input type="text" name="artistName" id="artistName" class="textfield" placeholder="Artist Name">
+		</div>
+		<div class="submit">
+			<span class="svg-rock" tabindex="0"></span>
+			<h3>Submit</h3>
+		</div>
 		<div class="ct-chart .ct-square">
 			<h3></h3>
 			<p class="label">Plays</p>
@@ -43,12 +59,12 @@
 				<a href="#" class="year-link">2012</a>
 				<a href="#" class="year-link">2011</a>
 				<a href="#" class="year-link">2010</a>
-				<a href="#" class="year-link">2009</a>
-				<a href="#" class="year-link">2008</a>
-				<a href="#" class="year-link">2007</a>
+				<a href="#" class="year-link year-link-bottom">2009</a>
+				<a href="#" class="year-link year-link-bottom">2008</a>
+				<a href="#" class="year-link year-link-bottom">2007</a>
 			</div>
 		</div>
-		<div class="modal"></div>
+		<div class="overlay"></div>
 	</div> <!-- /.container -->
 
 	<footer class="clearfix">
@@ -128,6 +144,8 @@
 	<script type="text/javascript" src="scripts/jquery-2.1.1.min.js"></script>  
 	<script src="bower_components/chartist/libdist/chartist.js"></script>
 	<script src="bower_components/sweetalert/lib/sweet-alert.min.js"></script>
+	<script src="ajaxLoaders/scripts/loaders.js"></script>
+	<script src="js/SVGinject.js"></script>
 	<script type="text/javascript" src="scripts/lastfmapp.js"></script>
 </body>
 </html>

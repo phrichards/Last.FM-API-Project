@@ -1,0 +1,27 @@
+{
+  "name": "LastFMTrends",
+  "version": "1.0.0",
+  "description": "Week 5 project for the [HackerYou](http://hackeryou.com) fulltime bootcamp. Uses the [Last.FM API](http://www.last.fm/api/intro) to graph a user's history of listening to a given artist over time.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phrichards/Last.FM-API-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phrichards/Last.FM-API-Project/issues"
+  },
+  "homepage": "https://github.com/phrichards/Last.FM-API-Project",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-svginject": "0.0.2"
+  }
+}

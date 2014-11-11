@@ -1,0 +1,111 @@
+header {
+	width: 100%;
+	// background-color: $last-fm-red;
+	color: $last-fm-red;
+	font-family: 'Oxygen', sans-serif;
+	height: 80px;
+	font-size: 20px;
+
+	@media (max-width: 768px) {
+		font-size: 15px;
+	}
+
+	@media (max-width: 480px) {
+		font-size: 13px;
+	}
+}
+
+h1 {
+	text-align: center;
+	font-weight: 600;
+	margin-top: 0;
+	padding-top: 20px;
+	margin-bottom: 0;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 20px;
+
+	@media (max-width: 768px) {
+		font-size: 15px;
+	}
+
+	@media (max-width: 690px) {
+		font-size: 18px;
+	}
+
+	@media (max-width: 480px) {
+		margin-bottom: 30px;
+	}
+
+	@media (max-width: 320px) {
+		margin-top: 0;
+	}
+}
+
+.instructions {
+	width: 25%;
+	position: absolute;
+	z-index: 1000;
+	top: -80px;
+	right: -230px;
+
+	@media (min-width: 1735px) {
+		right: -350px;
+	}
+
+	@media (max-width: 1024px) {
+		right: -20px;
+	}
+
+	@media (max-width: 768px) {
+		right: 20px;
+	}
+
+	@media (max-width: 320px) {
+		right: 10px;
+		top: -70px;
+	}
+}
+
+.instructions p {
+	// border: 1px solid red;
+	margin-top: 20px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	display: none;
+}
+
+.instructions a {
+	color: $last-fm-red;
+	text-decoration: none;
+}
+
+.instructions a:hover {
+	color: #FFF;
+}
+
+.svg-question {
+	stroke: $last-fm-red;
+	fill: $last-fm-red;
+	cursor: pointer;
+	float: right;
+}
+
+.svg-question svg {
+	height: 40px;
+	width: 40px;
+
+	@media (max-width: 320px) {
+		height: 30px;
+		width: 30px;
+	}
+}
+
+.svg-question:hover {
+	stroke: #FFF;
+	fill: #FFF;
+}

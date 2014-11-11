@@ -2292,20 +2292,26 @@
 
 var lastFmChart = function() {
 
-var data = {
-  // A labels array that can contain any sort of values
-  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-  // Our series array that contains series objects or in this case series data arrays
-  series: [
-    [lastFmApp.months['Jan'], lastFmApp.months['Feb'], lastFmApp.months['Mar'], lastFmApp.months['Apr'], lastFmApp.months['May'], lastFmApp.months['Jun'], lastFmApp.months['Jul'], lastFmApp.months['Aug'], lastFmApp.months['Sep'], lastFmApp.months['Oct'], lastFmApp.months['Nov'], lastFmApp.months['Dec']]
-  ]
-};
+  var data = {
+    // A labels array that can contain any sort of values
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    // Our series array that contains series objects or in this case series data arrays
+    series: [
+      [lastFmApp.months['Jan'], lastFmApp.months['Feb'], lastFmApp.months['Mar'], lastFmApp.months['Apr'], lastFmApp.months['May'], lastFmApp.months['Jun'], lastFmApp.months['Jul'], lastFmApp.months['Aug'], lastFmApp.months['Sep'], lastFmApp.months['Oct'], lastFmApp.months['Nov'], lastFmApp.months['Dec']]
+    ] // end series
+  }; //end data
 
-// In the global name space Chartist we call the Line function to initialize a line chart
-// As a first parameter we pass in a selector where we would like to get our chart created
-// Second parameter is the actual data object
-Chartist.Line('.ct-chart', data);
-$('.ct-chart h3').text(lastFmApp.artist);
-$('.year-links').css('display', 'block');
-$('.label').css('display', 'block');
+  var options = {
+    showArea: true,
+    areaBase: 0,
+    height: '290px',
+  };
+
+  // In the global name space Chartist we call the Line function to initialize a line chart
+  // As a first parameter we pass in a selector where we would like to get our chart created
+  // Second parameter is the actual data object
+  Chartist.Line('.ct-chart', data, options);
+  $('.ct-chart h3').text(lastFmApp.artist);
+  $('.year-links').css('display', 'block');
+  $('.label').css('display', 'block');
 };

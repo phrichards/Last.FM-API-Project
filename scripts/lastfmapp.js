@@ -24,7 +24,32 @@ lastFmApp.artist = '';
 lastFmApp.user = '';
 
 lastFmApp.init = function(){
-	$('#submit').on('click', function(){
+	$('.submit .svg-rock').hover(function(){
+		$('.submit h3').css('color', '#FFF');
+	}, function(){
+		$('.submit h3').css('color', '#E52B50');
+	});
+
+	$('.small-submit .svg-roll').hover(function(){
+		$('.small-submit p').css('color', '#FFF');
+	}, function(){
+		$('.small-submit p').css('color', '#E52B50');
+	});
+
+	$('.svg-rock').focus(function(){
+		$('.submit h3').css('color', '#FFF');
+	});
+
+	$('.svg-roll').focus(function(){
+		$('.small-submit p').css('color', '#FFF');
+	});
+
+	lastFmApp.question();
+
+	$('.svg-rock, .svg-roll').on('click', function(){
+		$(this).loaders({spinnerNumber: 3, backgroundColor: '#E52B50'});
+		$('.submit').css('display', 'none');
+		$('.small-submit').css('display', 'block');
 		lastFmApp.reset();
 		lastFmApp.user = $('#userName').val();
 		lastFmApp.artist = $('#artistName').val();
@@ -33,6 +58,21 @@ lastFmApp.init = function(){
 		$('.year-link:first').css({'color': '#B42024', 'text-decoration': 'none'});
 		$('.year-link').hover('text-decoration', 'underline');
 		lastFmApp.getTracks(lastFmApp.artist, lastFmApp.user, startDate, endDate); 
+	});
+	$('.textfield, .svg-rock').on('keydown', function(){
+		if (event.keyCode == 13) {
+			$(this).loaders({spinnerNumber: 3, backgroundColor: '#E52B50'});
+			$('.submit').css('display', 'none');
+			$('.small-submit').css('display', 'block');
+			lastFmApp.reset();
+			lastFmApp.user = $('#userName').val();
+			lastFmApp.artist = $('#artistName').val();
+			var startDate = '1388534400';
+			var endDate = '1420070399';
+			$('.year-link:first').css({'color': '#B42024', 'text-decoration': 'none'});
+			$('.year-link').hover('text-decoration', 'underline');
+			lastFmApp.getTracks(lastFmApp.artist, lastFmApp.user, startDate, endDate); 
+		};
 	});
 };
 
@@ -176,6 +216,7 @@ lastFmApp.getDate = function(tracks){
 
 $('.year-link').on('click', function(){
 	lastFmApp.reset();
+	$(this).loaders({spinnerNumber: 3, backgroundColor: '#E52B50'});
 	$('.year-link:first').css('color', '#FFF');
 	var year = $(this).text();
 	$(this).css({'color': '#B42024', 'text-decoration': 'none'});
@@ -221,12 +262,11 @@ lastFmApp.changeYear = function(year) {
 	lastFmApp.getTracks(lastFmApp.artist, lastFmApp.user, lastFmApp.startDate, lastFmApp.endDate);
 };
 
-$body = $("body");
-
-$(document).on({
-    ajaxStart: function() { $body.addClass("loading");    },
-     ajaxStop: function() { $body.removeClass("loading"); }    
-});
+lastFmApp.question = function() {
+	$('.svg-question').on('click', function(){
+		$('.instructions p').fadeToggle(500);
+	});
+};
 
 $(document).ready(function(){
 	lastFmApp.init();

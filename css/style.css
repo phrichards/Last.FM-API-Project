@@ -1,459 +1,326 @@
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
-  display: block;
-}
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro|Oxygen:400,700);
+/* line 1, _reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
 
-audio, canvas, video {
-  display: inline-block;
-}
+/* line 1, _reset.scss */
+audio, canvas, video { display: inline-block; }
 
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
+/* line 1, _reset.scss */
+audio:not([controls]) { display: none; height: 0; }
 
-[hidden] {
-  display: none;
-}
+/* line 1, _reset.scss */
+[hidden] { display: none; }
 
-html {
-  font-family: sans-serif;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
+/* line 1, _reset.scss */
+html { font-family: sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-a:focus {
-  outline: thin dotted;
-}
+/* line 1, _reset.scss */
+a:focus { outline: thin dotted; }
 
-a:active, a:hover {
-  outline: 0;
-}
+/* line 1, _reset.scss */
+a:active, a:hover { outline: 0; }
 
-h1 {
-  font-size: 2em;
-}
+/* line 1, _reset.scss */
+h1 { font-size: 2em; }
 
-abbr[title] {
-  border-bottom: 1px dotted;
-}
+/* line 1, _reset.scss */
+abbr[title] { border-bottom: 1px dotted; }
 
-b, strong {
-  font-weight: 700;
-}
+/* line 1, _reset.scss */
+b, strong { font-weight: 700; }
 
-dfn {
-  font-style: italic;
-}
+/* line 1, _reset.scss */
+dfn { font-style: italic; }
 
-mark {
-  background: #ff0;
-  color: #000;
-}
+/* line 1, _reset.scss */
+mark { background: #ff0; color: #000; }
 
-code, kbd, pre, samp {
-  font-family: monospace, serif;
-  font-size: 1em;
-}
+/* line 1, _reset.scss */
+code, kbd, pre, samp { font-family: monospace, serif; font-size: 1em; }
 
-pre {
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
+/* line 1, _reset.scss */
+pre { white-space: pre-wrap; word-wrap: break-word; }
 
-q {
-  quotes: \201C \201D \2018 \2019;
-}
+/* line 1, _reset.scss */
+q { quotes: \201C \201D \2018 \2019; }
 
-small {
-  font-size: 80%;
-}
+/* line 1, _reset.scss */
+small { font-size: 80%; }
 
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
+/* line 1, _reset.scss */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
 
-sup {
-  top: -.5em;
-}
+/* line 1, _reset.scss */
+sup { top: -.5em; }
 
-sub {
-  bottom: -.25em;
-}
+/* line 1, _reset.scss */
+sub { bottom: -.25em; }
 
-img {
-  border: 0;
-}
+/* line 1, _reset.scss */
+img { border: 0; }
 
-svg:not(:root) {
-  overflow: hidden;
-}
+/* line 1, _reset.scss */
+svg:not(:root) { overflow: hidden; }
 
-fieldset {
-  border: 1px solid silver;
-  margin: 0 2px;
-  padding: .35em .625em .75em;
-}
+/* line 1, _reset.scss */
+fieldset { border: 1px solid silver; margin: 0 2px; padding: .35em .625em .75em; }
 
-button, input, select, textarea {
-  font-family: inherit;
-  font-size: 100%;
-  margin: 0;
-}
+/* line 1, _reset.scss */
+button, input, select, textarea { font-family: inherit; font-size: 100%; margin: 0; }
 
-button, input {
-  line-height: normal;
-}
+/* line 1, _reset.scss */
+button, input { line-height: normal; }
 
-button, html input[type=button],
-input[type=reset], input[type=submit] {
-  -webkit-appearance: button;
-  cursor: pointer;
-}
+/* line 1, _reset.scss */
+button, html input[type=button], input[type=reset], input[type=submit] { -webkit-appearance: button; cursor: pointer; }
 
-button[disabled], input[disabled] {
-  cursor: default;
-}
+/* line 2, _reset.scss */
+button[disabled], input[disabled] { cursor: default; }
 
-input[type=checkbox], input[type=radio] {
-  box-sizing: border-box;
-  padding: 0;
-}
+/* line 2, _reset.scss */
+input[type=checkbox], input[type=radio] { box-sizing: border-box; padding: 0; }
 
-input[type=search] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
+/* line 2, _reset.scss */
+input[type=search] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
 
-input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
+/* line 2, _reset.scss */
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration { -webkit-appearance: none; }
 
-textarea {
-  overflow: auto;
-  vertical-align: top;
-}
+/* line 2, _reset.scss */
+textarea { overflow: auto; vertical-align: top; }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+/* line 2, _reset.scss */
+table { border-collapse: collapse; border-spacing: 0; }
 
-body, figure {
-  margin: 0;
-}
+/* line 2, _reset.scss */
+body, figure { margin: 0; }
 
-legend, button::-moz-focus-inner, input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
+/* line 2, _reset.scss */
+legend, button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+/* line 4, _reset.scss */
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.clearfix:after {
-  content: " ";
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both;
-}
+/* line 9, _reset.scss */
+.clearfix:after { content: " "; visibility: hidden; display: block; height: 0; clear: both; }
 
-body {
-  position: relative;
-  background: url("https://farm8.staticflickr.com/7021/13992864854_976a321115_h.jpg") no-repeat center center fixed;
-  background-size: cover;
-  color: #FFF;
-}
+/* line 5, _base.scss */
+body { position: relative; background: #333333; background-size: cover; color: #FFF; }
 
-body:before {
-  content: "";
-  display: block;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  background: rgba(0, 0, 0, 0.75);
-}
+/* line 13, _base.scss */
+body:before { content: ""; display: block; position: fixed; width: 100%; height: 100%; left: 0; top: 0; z-index: -1; background: rgba(0, 0, 0, 0.75); }
 
-header {
-  width: 100%;
-  background-color: RGBA(180, 32, 36, 0.75);
-  color: #FFF;
-  font-family: 'Open Sans', sans-serif;
-  height: 100px;
-  font-size: 20px;
-}
-@media (max-width: 768px) {
-  header {
-    font-size: 15px;
-  }
-}
-@media (max-width: 480px) {
-  header {
-    font-size: 13px;
-  }
-}
+/* line 25, _base.scss */
+.container { width: 100%; max-width: 940px; margin: 0 auto; font-family: 'Source Sans Pro', sans-serif; position: relative; letter-spacing: 0.1em; }
 
-h1 {
-  text-align: center;
-  font-weight: 600;
-  margin-top: 0;
-  padding-top: 20px;
-}
+/* line 1, _header.scss */
+header { width: 100%; color: #E52B50; font-family: 'Oxygen', sans-serif; height: 80px; font-size: 20px; }
+@media (max-width: 768px) { /* line 1, _header.scss */
+  header { font-size: 15px; } }
+@media (max-width: 480px) { /* line 1, _header.scss */
+  header { font-size: 13px; } }
 
-.container {
-  width: 100%;
-  max-width: 940px;
-  margin: 0 auto;
-  font-family: 'Open Sans', sans-serif;
-  position: relative;
-}
+/* line 18, _header.scss */
+h1 { text-align: center; font-weight: 600; margin-top: 0; padding-top: 20px; margin-bottom: 0; }
 
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 20px;
-}
-@media (max-width: 768px) {
-  h2 {
-    font-size: 15px;
-  }
-}
-@media (max-width: 690px) {
-  h2 {
-    font-size: 18px;
-  }
-}
+/* line 26, _header.scss */
+h2 { text-align: center; margin-bottom: 50px; font-size: 20px; }
+@media (max-width: 768px) { /* line 26, _header.scss */
+  h2 { font-size: 15px; } }
+@media (max-width: 690px) { /* line 26, _header.scss */
+  h2 { font-size: 18px; } }
+@media (max-width: 480px) { /* line 26, _header.scss */
+  h2 { margin-bottom: 30px; } }
+@media (max-width: 320px) { /* line 26, _header.scss */
+  h2 { margin-top: 0; } }
 
-h3 {
-  position: absolute;
-  top: -90px;
-  text-transform: capitalize;
-  width: 100%;
-  text-align: center;
-}
+/* line 48, _header.scss */
+.instructions { width: 25%; position: absolute; z-index: 1000; top: -80px; right: -230px; }
+@media (min-width: 1735px) { /* line 48, _header.scss */
+  .instructions { right: -350px; } }
+@media (max-width: 1024px) { /* line 48, _header.scss */
+  .instructions { right: -20px; } }
+@media (max-width: 768px) { /* line 48, _header.scss */
+  .instructions { right: 20px; } }
+@media (max-width: 320px) { /* line 48, _header.scss */
+  .instructions { right: 10px; top: -70px; } }
 
-input {
-  border-radius: 5px;
-  box-shadow: none;
-}
+/* line 73, _header.scss */
+.instructions p { margin-top: 20px; position: absolute; top: 30px; left: 30px; display: none; }
 
-input[type="text"] {
-  float: left;
-}
+/* line 82, _header.scss */
+.instructions a { color: #E52B50; text-decoration: none; }
 
-label {
-  float: left;
-  margin-left: 10%;
-}
-@media (max-width: 690px) {
-  label {
-    margin-left: 44%;
-  }
-}
-@media (max-width: 480px) {
-  label {
-    margin-left: 42%;
-  }
-}
+/* line 87, _header.scss */
+.instructions a:hover { color: #FFF; }
 
-label[for="artistName"] {
-  margin-left: 8%;
-}
-@media (max-width: 768px) {
-  label[for="artistName"] {
-    margin-left: 3%;
-  }
-}
-@media (max-width: 690px) {
-  label[for="artistName"] {
-    margin-left: 44%;
-  }
-}
-@media (max-width: 480px) {
-  label[for="artistName"] {
-    margin-left: 42%;
-  }
-}
+/* line 91, _header.scss */
+.svg-question { stroke: #E52B50; fill: #E52B50; cursor: pointer; float: right; }
 
-.textfield {
-  border: 1px solid #000;
-  margin-left: 1.5%;
-}
-@media (max-width: 690px) {
-  .textfield {
-    margin-left: 35.5%;
-    margin-right: 42%;
-  }
-}
-@media (max-width: 480px) {
-  .textfield {
-    margin-left: 30.5%;
-  }
-}
+/* line 98, _header.scss */
+.svg-question svg { height: 40px; width: 40px; }
+@media (max-width: 320px) { /* line 98, _header.scss */
+  .svg-question svg { height: 30px; width: 30px; } }
 
-.textfield:focus {
-  outline: none;
-  border-color: RGBA(180, 32, 36, 0.75);
-  box-shadow: 0 0 10px RGBA(180, 32, 36, 0.75);
-  background-color: #CCC;
-}
+/* line 108, _header.scss */
+.svg-question:hover { stroke: #FFF; fill: #FFF; }
 
-#submit {
-  margin-left: 28%;
-  margin-top: 25px;
-  margin-bottom: 100px;
-  position: relative;
-  vertical-align: top;
-  width: 40%;
-  height: 45px;
-  padding: 0;
-  font-size: 22px;
-  color: white;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  background: RGBA(180, 32, 36, 0.75);
-  border: 0;
-  cursor: pointer;
-}
-@media (max-width: 768px) {
-  #submit {
-    margin-left: 32%;
-  }
-}
-@media (max-width: 690px) {
-  #submit {
-    margin-left: 30%;
-    margin-top: 20px;
-  }
-}
-@media (max-width: 480px) {
-  #submit {
-    margin-left: 31%;
-  }
-}
+/* line 1, _inputs.scss */
+input { border-radius: 5px; box-shadow: none; padding-left: 60px; }
 
-#submit:focus {
-  outline: none;
-  border-color: RGBA(180, 32, 36, 0.75);
-  box-shadow: 0 0 10px RGBA(180, 32, 36, 0.75);
-  color: #000;
-}
+/* line 7, _inputs.scss */
+input[type="text"] { float: left; }
 
-#submit:hover {
-  color: #000;
-}
+/* line 11, _inputs.scss */
+div.userBox, div.artistBox { position: relative; }
 
-.ct-chart {
-  position: relative;
-}
+/* line 16, _inputs.scss */
+span.svg-user { position: absolute; top: 1px; left: 127px; border: 1px solid #E52B50; padding: 11.5px; border-radius: 3px; background-color: #E52B50; }
+@media (max-width: 768px) { /* line 16, _inputs.scss */
+  span.svg-user { left: 105px; } }
+@media (max-width: 640px) { /* line 16, _inputs.scss */
+  span.svg-user { left: 87px; } }
+@media (max-width: 480px) { /* line 16, _inputs.scss */
+  span.svg-user { left: 51px; } }
+@media (max-width: 320px) { /* line 16, _inputs.scss */
+  span.svg-user { left: 12px; } }
 
-.label {
-  position: absolute;
-  left: -80px;
-  top: 45px;
-  display: none;
-}
+/* line 42, _inputs.scss */
+span.svg-guitarpick { position: absolute; top: 1px; left: 536px; border: 1px solid #E52B50; padding: 6.5px; border-radius: 3px; background-color: #E52B50; }
+@media (max-width: 768px) { /* line 42, _inputs.scss */
+  span.svg-guitarpick { left: 439px; } }
+@media (max-width: 640px) { /* line 42, _inputs.scss */
+  span.svg-guitarpick { left: 366px; } }
+@media (max-width: 480px) { /* line 42, _inputs.scss */
+  span.svg-guitarpick { top: 51px; left: 51px; } }
+@media (max-width: 320px) { /* line 42, _inputs.scss */
+  span.svg-guitarpick { left: 12px; } }
 
-.year-links {
-  display: none;
-  position: absolute;
-  bottom: -100px;
-  left: 17%;
-}
-@media (max-width: 768px) {
-  .year-links {
-    left: 15%;
-  }
-}
-@media (max-width: 690px) {
-  .year-links {
-    bottom: -76px;
-    left: 9%;
-  }
-}
-@media (max-width: 480px) {
-  .year-links {
-    left: 0;
-  }
-}
+/* line 69, _inputs.scss */
+.svg-user svg { height: 20px; width: 20px; }
 
-.year-links p {
-  position: absolute;
-  bottom: 12px;
-  left: 26%;
-  margin-bottom: 30px;
-}
+/* line 74, _inputs.scss */
+.svg-guitarpick svg { height: 30px; width: 30px; }
 
-.year-link {
-  padding-left: 30px;
-}
-@media (max-width: 480px) {
-  .year-link {
-    padding-left: 15px;
-  }
-}
+/* line 79, _inputs.scss */
+.svg-user svg path { fill: #FFF; }
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  top: 45%;
-  left: 45%;
-  height: 10%;
-  width: 10%;
-  background: rgba(255, 255, 255, 0.5) url("http://i.stack.imgur.com/FhHRx.gif") 50% 50% no-repeat;
-  border-radius: 5px;
-}
+/* line 83, _inputs.scss */
+.svg-guitarpick svg { stroke: #FFF; fill: #FFF; }
 
-body.loading {
-  overflow: hidden;
-}
+/* line 88, _inputs.scss */
+.textfield { border: 1px solid #000; margin-left: 13.5%; width: 30%; height: 50px; }
+@media (max-width: 480px) { /* line 88, _inputs.scss */
+  .textfield { margin-left: 10.5%; width: 50%; } }
+@media (max-width: 320px) { /* line 88, _inputs.scss */
+  .textfield { margin-left: 3.5%; width: 65%; } }
 
-body.loading .modal {
-  display: block;
-}
+/* line 105, _inputs.scss */
+.textfield:focus { outline: none; border-color: #E52B50; box-shadow: 0 0 10px #E52B50; background-color: #CCC; }
 
-footer {
-  font-size: 12px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  padding-right: 2%;
-  width: 100%;
-  background-color: RGBA(180, 32, 36, 0.75);
-  color: #FFF;
-}
+/* line 112, _inputs.scss */
+.svg-rock { stroke: #E52B50; fill: #E52B50; cursor: pointer; }
 
-footer p {
-  float: right;
-  margin-top: 20px;
-}
-@media (max-width: 480px) {
-  footer p {
-    float: left;
-  }
-}
+/* line 118, _inputs.scss */
+.svg-rock:focus { outline: none; stroke: #FFF; fill: #FFF; }
 
-footer svg {
-  margin-left: 1%;
-  float: right;
-  width: 20px;
-  height: 20px;
-  margin-top: 15px;
-  fill: #FFF;
-}
+/* line 124, _inputs.scss */
+.submit { position: absolute; top: 175px; left: 240px; }
+@media (min-width: 1735px) { /* line 124, _inputs.scss */
+  .submit { top: 255px; } }
+@media (max-width: 1024px) { /* line 124, _inputs.scss */
+  .submit { left: 230px; } }
+@media (max-width: 768px) { /* line 124, _inputs.scss */
+  .submit { left: 142px; } }
+@media (max-width: 640px) { /* line 124, _inputs.scss */
+  .submit { left: 82px; } }
+@media (max-width: 480px) { /* line 124, _inputs.scss */
+  .submit { top: 255px; left: 52px; } }
+@media (max-width: 320px) { /* line 124, _inputs.scss */
+  .submit { left: -10px; } }
 
-footer svg:hover {
-  fill: #000;
-}
+/* line 155, _inputs.scss */
+.submit h3 { text-align: center; color: #E52B50; text-transform: uppercase; }
+
+/* line 161, _inputs.scss */
+.svg-rock svg { height: 400px; width: 400px; margin-right: 65px; }
+@media (max-width: 480px) { /* line 161, _inputs.scss */
+  .svg-rock svg { height: 300px; width: 300px; } }
+
+/* line 172, _inputs.scss */
+.svg-roll svg { height: 50px; width: 50px; stroke: #E52B50; fill: #E52B50; cursor: pointer; margin-left: 3%; }
+
+/* line 181, _inputs.scss */
+.small-submit { position: absolute; top: 70px; left: 443px; display: none; }
+@media (max-width: 768px) { /* line 181, _inputs.scss */
+  .small-submit { left: 357px; } }
+@media (max-width: 640px) { /* line 181, _inputs.scss */
+  .small-submit { left: 295px; } }
+@media (max-width: 480px) { /* line 181, _inputs.scss */
+  .small-submit { left: 345px; top: 90px; } }
+@media (max-width: 320px) { /* line 181, _inputs.scss */
+  .small-submit { left: 237px; } }
+
+/* line 205, _inputs.scss */
+.small-submit p { color: #E52B50; margin-top: 0; }
+
+/* line 211, _inputs.scss */
+.svg-rock svg:hover, .svg-roll svg:hover { stroke: #FFF; fill: #FFF; }
+
+/* line 1, _chart.scss */
+.ct-chart h3 { position: absolute; top: -90px; text-transform: capitalize; width: 100%; text-align: center; }
+@media (max-width: 1024px) { /* line 1, _chart.scss */
+  .ct-chart h3 { top: -80px; } }
+@media (max-width: 480px) { /* line 1, _chart.scss */
+  .ct-chart h3 { top: -65px; } }
+
+/* line 17, _chart.scss */
+.ct-chart { position: relative; margin-top: 230px; z-index: 2000; }
+@media (max-width: 1024px) { /* line 17, _chart.scss */
+  .ct-chart { margin-top: 220px; } }
+@media (max-width: 480px) { /* line 17, _chart.scss */
+  .ct-chart { margin-top: 200px; } }
+
+/* line 31, _chart.scss */
+.label { position: absolute; left: -80px; top: 45px; display: none; }
+
+/* line 38, _chart.scss */
+.year-links { display: none; position: absolute; bottom: -100px; left: 17%; }
+@media (max-width: 768px) { /* line 38, _chart.scss */
+  .year-links { left: 15%; } }
+@media (max-width: 640px) { /* line 38, _chart.scss */
+  .year-links { bottom: -76px; left: 3%; } }
+@media (max-width: 480px) { /* line 38, _chart.scss */
+  .year-links { left: 0; } }
+
+/* line 58, _chart.scss */
+.year-links p { position: absolute; bottom: 12px; left: 26%; margin-bottom: 30px; }
+@media (max-width: 320px) { /* line 58, _chart.scss */
+  .year-links p { display: none; } }
+
+/* line 69, _chart.scss */
+.year-link { padding-left: 30px; }
+@media (max-width: 480px) { /* line 69, _chart.scss */
+  .year-link { padding-left: 15px; } }
+
+/* line 77, _chart.scss */
+.year-links a:hover { color: #E52B50; }
+
+@media (max-width: 320px) { /* line 81, _chart.scss */
+  .ct-chart .year-links .year-link-bottom { position: relative; bottom: -20px; } }
+
+/* line 1, _footer.scss */
+footer { font-size: 12px; position: fixed; left: 0; bottom: 0; padding-right: 2%; width: 100%; color: #E52B50; }
+
+/* line 12, _footer.scss */
+footer p { float: right; margin-top: 20px; }
+@media (max-width: 480px) { /* line 12, _footer.scss */
+  footer p { float: left; } }
+
+/* line 21, _footer.scss */
+footer svg { margin-left: 1%; float: right; width: 20px; height: 20px; margin-top: 15px; fill: #E52B50; }
+
+/* line 30, _footer.scss */
+footer svg:hover { fill: #FFF; }
+
+/*# sourceMappingURL=style.css.map */
